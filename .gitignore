@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Personal configuration
+config.json
+
+# Generated application data
+application_results.txt
+application_links.txt
+application_links_filtered.txt
+application_links_original.txt
+all_listings.txt
+results/
+
+# Screenshots and debug output
+*.png
+*.jpg
+*.jpeg
+
+# Temporary / backup files
+final_bot_backup.py
