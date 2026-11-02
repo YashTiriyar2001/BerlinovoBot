@@ -529,7 +529,7 @@ def fill_application(page):
     select_custom_combobox(
         page,
         "formly_17_select_$$_salutation_$$_0",
-        "Herr",
+        CONFIG["salutation"],
     )
 
     # --------------------------------------------------------
@@ -589,7 +589,7 @@ def fill_application(page):
     select_custom_combobox(
         page,
         "formly_21_select_$$_country_$$_2",
-        "Indien",
+        CONFIG["country"],
     )
 
     # --------------------------------------------------------
@@ -619,13 +619,13 @@ def fill_application(page):
     select_custom_combobox(
         page,
         "formly_23_select_berlinovo_herkunft_0",
-        "einem Land außerhalb der EU",
+        CONFIG["student_from"],
     )
 
     select_custom_combobox(
         page,
         "formly_24_select_$$_place_of_birth_$$_0",
-        "Indien",
+        CONFIG["nationality"],
     )
 
     # --------------------------------------------------------
@@ -657,7 +657,7 @@ def fill_application(page):
     select_custom_combobox(
         page,
         "formly_29_select_berlinovo_bundesland_der_hochschule_0",
-        "Berlin",
+        CONFIG["study_state"],
     )
 
     page.wait_for_timeout(700)
@@ -671,7 +671,7 @@ def fill_application(page):
     select_custom_combobox(
         page,
         "formly_30_select_berlinovo_art_der_hochschule_berlin_0",
-        "Fachhochschule",
+        CONFIG["university_type"],
     )
 
     page.wait_for_timeout(700)
@@ -685,7 +685,7 @@ def fill_application(page):
     select_custom_combobox(
         page,
         "formly_33_select_berlinovo_name_fachhochschule_berlin_0",
-        "Hochschule für Technik und Wirtschaft Berlin (HTW)",
+        CONFIG["university"],
     )
 
     page.wait_for_timeout(700)
@@ -742,7 +742,7 @@ def fill_application(page):
     select_custom_combobox(
         page,
         "formly_9_select_berlinovo_gewuenschte_wohnform_0",
-        "Keine Präferenz",
+        CONFIG["housing_type"],
     )
 
     # --------------------------------------------------------
@@ -799,49 +799,49 @@ def fill_application(page):
     verify_selection(
         page,
         "formly_17_select_$$_salutation_$$_0",
-        "Herr",
+        CONFIG["salutation"],
     )
 
     verify_selection(
         page,
         "formly_21_select_$$_country_$$_2",
-        "Indien",
+        CONFIG["country"],
     )
 
     verify_selection(
         page,
         "formly_23_select_berlinovo_herkunft_0",
-        "einem Land außerhalb der EU",
+        CONFIG["student_from"],
     )
 
     verify_selection(
         page,
         "formly_24_select_$$_place_of_birth_$$_0",
-        "Indien",
+        CONFIG["nationality"],
     )
 
     verify_selection(
         page,
         "formly_29_select_berlinovo_bundesland_der_hochschule_0",
-        "Berlin",
+        CONFIG["study_state"],
     )
 
     verify_selection(
         page,
         "formly_30_select_berlinovo_art_der_hochschule_berlin_0",
-        "Fachhochschule",
+        CONFIG["university_type"],
     )
 
     verify_selection(
         page,
         "formly_33_select_berlinovo_name_fachhochschule_berlin_0",
-        "Hochschule für Technik und Wirtschaft Berlin (HTW)",
+        CONFIG["university"],
     )
 
     verify_selection(
         page,
         "formly_9_select_berlinovo_gewuenschte_wohnform_0",
-        "Keine Präferenz",
+        CONFIG["housing_type"],
     )
 
     print("All dropdown selections verified.")
